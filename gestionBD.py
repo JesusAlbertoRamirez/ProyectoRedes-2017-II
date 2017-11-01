@@ -4,16 +4,18 @@ para crear un nuevo registro, modificar uno ya existente o consultarlo.
 En esta base de datos existirán las siguientes entidades con los siguientes
 atributos:
 
-sistemaOpertativo: (kernel, release, nodo, version, maquina, procesador, so, hardware)
+sistemaOpertativo: (id, kernel, release, nodo, version, maquina, procesador, so, hardware)
 
-usuario: (nombre)
+usuario: (id, nombre)
 
-cpu: (noKernel, kernel, inactividad, esperaES, maquinaVirtual)
+cpu: (id, noKernel, kernel, inactividad, esperaES, maquinaVirtual)
 
-memoria: (virtual, disponible, buffer, cache)
+memoria: (id, virtual, disponible, buffer, cache)
 
-memoriaIntercambio: (desdeDisco, enElDisco)
+memoriaIntercambio: (id, desdeDisco, enElDisco)
 
-descargas: (link)
+descargas: (id, link, progreso)
+
+monitoreo: (id, peticion)
 
 """
